@@ -1,0 +1,38 @@
+{
+  "name": "@t4/api",
+  "version": "2.0.0",
+  "main": "src/index.ts",
+  "license": "MIT",
+  "scripts": {
+    "dev": "cross-env NO_D1_WARNING=true wrangler dev src/index.ts",
+    "generate": "drizzle-kit generate:sqlite --schema=./src/db/schema.ts --out=./migrations",
+    "migrate": "cross-env NO_D1_WARNING=true wrangler d1 migrations apply production",
+    "migrate:local": "cross-env NO_D1_WARNING=true wrangler d1 migrations apply production --local",
+    "seed": "cross-env NO_D1_WARNING=true wrangler d1 execute production --file=./seed/seed.sql",
+    "seed:local": "cross-env NO_D1_WARNING=true wrangler d1 execute production --local --file=./seed/seed.sql",
+    "studio": "drizzle-kit studio",
+    "deploy": "cross-env NO_D1_WARNING=true wrangler deploy --minify src/index.ts",
+    "postinstall": "pnpm generate",
+    "with-env": "dotenv -e ../../.env.local --",
+    "clean": "rm -rf .turbo node_modules"
+  },
+  "dependencies": {
+    "@hono/trpc-server": "^0.1.0",
+    "@trpc/server": "^10.41.0",
+    "@tsndr/cloudflare-worker-jwt": "^2.2.5",
+    "drizzle-orm": "^0.28.6",
+    "drizzle-valibot": "^0.1.1",
+    "hono": "^3.8.1",
+    "superjson": "^1.13.3",
+    "valibot": "^0.17.1"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20231016.0",
+    "better-sqlite3": "^8.7.0",
+    "dotenv-cli": "^7.3.0",
+    "drizzle-kit": "^0.19.13",
+    "eslint": "^8.51.0",
+    "typescript": "^5.2.2",
+    "wrangler": "3.6.0"
+  }
+}
