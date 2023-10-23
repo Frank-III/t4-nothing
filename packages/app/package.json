@@ -23,7 +23,7 @@
     "@trpc/client": "^10.41.0",
     "@trpc/next": "^10.41.0",
     "@trpc/react-query": "^10.41.0",
-    "burnt": "^0.11.7",
+    "burnt": "^0.12",
     "expo-constants": "~14.4.2",
     "expo-linking": "6.0.0",
     "expo-secure-store": "^12.5.0",

@@ -100,8 +100,8 @@ importers:
         specifier: 5.0.0
         version: 5.0.0
       burnt:
-        specifier: ^0.11.7
-        version: 0.11.7(expo@49.0.16)(react-dom@18.2.0)(react-native@0.72.6)(react@18.2.0)
+        specifier: ^0.12
+        version: 0.12.1(expo@49.0.16)(react-dom@18.2.0)(react-native@0.72.6)(react@18.2.0)
       expo:
         specifier: ^49.0.16
         version: 49.0.16(@babel/core@7.23.2)
@@ -349,8 +349,8 @@ importers:
         specifier: ^10.41.0
         version: 10.41.0(@tanstack/react-query@4.36.1)(@trpc/client@10.41.0)(@trpc/server@10.41.0)(react-dom@18.2.0)(react@18.2.0)
       burnt:
-        specifier: ^0.11.7
-        version: 0.11.7(expo@49.0.16)(react-dom@18.2.0)(react-native@0.72.6)(react@18.2.0)
+        specifier: ^0.12
+        version: 0.12.1(expo@49.0.16)(react-dom@18.2.0)(react-native@0.72.6)(react@18.2.0)
       expo-constants:
         specifier: ~14.4.2
         version: 14.4.2(expo@49.0.16)
@@ -7094,8 +7094,8 @@ packages:
     resolution: {integrity: sha512-uYBjakWipfaO/bXI7E8rq6kpwHRZK5cNYrUv2OzZSI/FvmdMyXJ2tG9dKcjEC5YHmHpUAwsargWIZNWdxb/bnQ==}
     dev: false
 
-  /burnt@0.11.7(expo@49.0.16)(react-dom@18.2.0)(react-native@0.72.6)(react@18.2.0):
-    resolution: {integrity: sha512-Td70Axu53eDdEFDehCW1IvBY6xopdgcIISHMDKhQQFKAuoxdYHsensfXIzOAsjqTaNFA8NFmnYfLdQhAoPc9MA==}
+  /burnt@0.12.1(expo@49.0.16)(react-dom@18.2.0)(react-native@0.72.6)(react@18.2.0):
+    resolution: {integrity: sha512-a5EQvG8CR1JDmOyY9aiUORnJ39wpmZMMva5qbCTXadtNJAjLDZTvrmp7cvYB9i+Jfe1wVhvCCFfEios7M9/88Q==}
     peerDependencies:
       expo: '*'
       react: '*'
