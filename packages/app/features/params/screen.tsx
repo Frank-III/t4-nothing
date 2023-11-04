@@ -8,7 +8,7 @@ const { useParam } = createParam<{ id: string }>()
 export const ParamsScreen = (): React.ReactNode => {
   const [id] = useParam('id')
   const link = useLink({
-    href: '/',
+    href: '/home',
   })
 
   return (

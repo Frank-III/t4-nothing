@@ -28,23 +28,23 @@ export function HomeScreen() {
   const toast = useToastController()
 
   const signInLink = useLink({
-    href: '/sign-in',
+    href: '/home/sign-in',
   })
 
   const signUpLink = useLink({
-    href: '/sign-up',
+    href: '/home/sign-up',
   })
 
   const dataFetchingLink = useLink({
-    href: '/data-fetching',
+    href: '/home/data-fetching',
   })
 
   const virtualizedListLink = useLink({
-    href: '/virtualized-list',
+    href: '/home/virtualized-list',
   })
 
   const paramsLink = useLink({
-    href: '/params/tim',
+    href: '/home/params/tim',
   })
 
   return (
